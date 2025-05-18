@@ -138,7 +138,8 @@ section h2 {
   margin-block: 0;
   font-size: clamp(1.25rem, 1.0761rem + 0.8696vw, 1.75rem);
 }
-.left, .right {
+.left,
+.right {
   max-width: 400px;
   padding: 1rem;
   border-radius: 1rem;
@@ -162,8 +163,12 @@ section h2 {
 }
 @media (max-width: 768px) {
   .right,
-  .left {
+  .left,
+  .sub-head {
     margin: 0 auto;
+  }
+  .legal-ai {
+    background-image: url('./images/no-smile.webp');
   }
 }
 .tip {
@@ -176,7 +181,7 @@ section h2 {
   text-align: center;
   padding-top: 2rem;
 }
-.tip-intro{
+.tip-intro {
   font-size: clamp(1rem, 0.4783rem + 2.6087vw, 2.5rem);
   color: white;
   font-family: 'GothamBold', sans-serif;
