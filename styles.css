@@ -422,21 +422,11 @@ details p {
 .cta a:hover {
   background: #5e1b89;
 }
-
-/* .video-wrapper {
+.video {
   max-width: 1024px;
   margin: 0 auto;
 }
-.video-wrapper img {
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-} */
 .video-placeholder {
-  max-width: 1024px;
-  margin: 0 auto;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
@@ -445,7 +435,6 @@ details p {
   margin-top: 1rem;
   overflow: hidden;
 }
-
 .video-placeholder iframe {
   position: absolute;
   top: 0;
