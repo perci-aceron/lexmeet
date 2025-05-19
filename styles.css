@@ -113,19 +113,23 @@ section h2 {
 .legal-ai {
   background-image: url('./images/smile.webp');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;
   text-align: center;
-  padding-top: 2rem;
   line-height: 1.3;
+}
+.legal-ai h2 {
+  margin: 0;
+  padding-top: 4rem;
 }
 .legal-timeline {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: clamp(2rem, 1.6522rem + 1.7391vw, 3rem);
   padding-inline: 2rem;
-  padding-bottom: 2rem;
+  padding-top: clamp(2rem, 0.6087rem + 6.9565vw, 6rem);
+  padding-bottom: clamp(2rem, 1.3043rem + 3.4783vw, 4rem);
 }
 .item {
   display: flex;
@@ -210,14 +214,12 @@ section h2 {
 .free-trial {
   background-image: url('./images/free-trial.webp');
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  height: clamp(25rem, 18.4783rem + 32.6087vw, 43.75rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 2rem;
-  padding-inline: 1rem;
+  padding: 2rem 1rem;
 }
 .free-trial h2 {
   text-align: center;
@@ -270,9 +272,11 @@ section h2 {
 .how-to-start h2 {
   text-align: center;
   line-height: 1.3;
+  margin-top: 0;
 }
 .how-to-start {
-  padding: 2rem 1rem;
+  padding-block: clamp(2rem, 1.3043rem + 3.4783vw, 4rem);
+  padding-inline: 1rem;
   border-radius: 8px;
   background-color: #ecf0f3;
 }
@@ -342,12 +346,12 @@ a {
 }
 .phone-bg h2,
 .phone-bg p {
-  padding-left: clamp(0rem, -3.4783rem + 17.3913vw, 10rem);
+  padding-left: clamp(0rem, -4.8696rem + 24.3478vw, 14rem);
 }
 .phone-info {
-  font-size: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
   font-family: 'HelveticaNeue', sans-serif;
   color: #808080;
+  font-size: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
   width: clamp(12.5rem, 8.1522rem + 21.7391vw, 25rem);
 }
 .phone-info span {
@@ -355,8 +359,7 @@ a {
 }
 /* faq */
 .faq {
-  margin: 2rem auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 .faq h2 {
   text-align: center;
@@ -405,12 +408,12 @@ details p {
 }
 
 .video-placeholder {
-  width: 100%;
+  max-width: 1024px;
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
   border-radius: 8px;
-  margin-top: 1rem;
+  margin: 0 auto;
   overflow: hidden;
 }
 
