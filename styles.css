@@ -116,7 +116,6 @@ section h2 {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  /* height: clamp(25rem, 11.9565rem + 65.2174vw, 62.5rem); */
   text-align: center;
   padding-top: 2rem;
   line-height: 1.3;
@@ -140,7 +139,8 @@ section h2 {
 }
 .left,
 .right {
-  max-width: 400px;
+  /* max-width: 400px; */
+  width: 400px;
   padding: 1rem;
   border-radius: 1rem;
   line-height: 1.2;
@@ -169,6 +169,19 @@ section h2 {
   }
   .legal-ai {
     background-image: url('./images/no-smile.webp');
+  }
+}
+/*only on mobile */
+.smile-mobile {
+  display: none;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .smile-mobile {
+    display: block;
+    background-image: url('./images/smile3.webp');
+    background-size: cover;
+    background-position: top;
   }
 }
 .tip {
